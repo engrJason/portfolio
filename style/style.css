@@ -50,6 +50,8 @@ container-fluid {
 .introPicture {
     width: 100%;
     height: auto;
+    border-bottom-style: solid;
+    border-color: #fdb813;
 }
 
 .videoContainer {
@@ -76,6 +78,7 @@ container-fluid {
     font-size: 2rem;
     z-index: 1;
     color: #fdb813;
+    padding-bottom: 4rem;
     animation-name: view;
     animation-duration: 4s;
     animation-iteration-count: 1;
@@ -83,7 +86,6 @@ container-fluid {
 }
 
 .intro p {
-    padding-top: 4rem;
     text-align: right;
     font-size: 1.3rem;
     font-weight: 300;
@@ -99,4 +101,32 @@ container-fluid {
 	0%   { opacity: 0;}
 	50%  { opacity: .5;}
 	100%  { opacity: 1;}
+}
+
+.aboutMe {
+    height: 100vh;
+    align-items: center;
+}
+
+.aboutMe h1 {
+    text-align: left;
+    font-size: 6rem;
+    z-index: 1;
+    color: black;
+    padding-bottom: 4rem;
+}
+
+.aboutMe p {
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 300;
+    z-index: 1;
+    color: black;
+}
+
+.aboutMePicture {
+    width: 60%;
+    display: block;
+    margin: auto;
+    border-radius: 0.5rem;
 }
