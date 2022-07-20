@@ -15,6 +15,33 @@ container-fluid {
     width: 100vw;
 }
 
+.navbar {
+    z-index: 1;
+    margin:  2rem;
+    padding: 0;
+    background-color: transparent;
+    border-bottom-style: solid;
+    border-color: #fdb813;
+}
+
+.nav-item, .navbar-brand {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fdb813;
+}
+
+.nav-link {
+    color: black;
+}
+
+.navbar-brand:hover { 
+    color: black; 
+}
+
+.nav-link:hover { 
+    color: #fdb813; 
+}
+
 .intro {
     height: 100vh;
     align-items: center;
@@ -29,6 +56,7 @@ container-fluid {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
 }
 
@@ -47,7 +75,7 @@ container-fluid {
     text-align: right;
     font-size: 2rem;
     z-index: 1;
-    color: gray;
+    color: #fdb813;
     animation-name: view;
     animation-duration: 4s;
     animation-iteration-count: 1;
