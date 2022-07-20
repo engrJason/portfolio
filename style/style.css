@@ -67,10 +67,6 @@ container-fluid {
     font-size: 6rem;
     z-index: 1;
     color: black;
-    animation-name: view;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
 }
 
 .intro h4 {
@@ -78,11 +74,7 @@ container-fluid {
     font-size: 2rem;
     z-index: 1;
     color: #fdb813;
-    padding-bottom: 4rem;
-    animation-name: view;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
+    padding-bottom: 3rem;
 }
 
 .intro p {
@@ -91,16 +83,6 @@ container-fluid {
     font-weight: 300;
     z-index: 1;
     color: black;
-    animation-name: view;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-}
-
-@keyframes view {
-	0%   { opacity: 0;}
-	50%  { opacity: .5;}
-	100%  { opacity: 1;}
 }
 
 .aboutMe {
@@ -275,4 +257,28 @@ container-fluid {
     border-color: #fdb813;
     padding-top: 2rem;
     margin: 2rem;
+}
+
+.revealFromRight {
+    position: relative;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.revealFromRight.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.revealFromLeft {
+    position: relative;
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.revealFromLeft.active {
+    transform: translateX(0);
+    opacity: 1;
 }
