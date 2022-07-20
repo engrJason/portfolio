@@ -143,16 +143,23 @@ container-fluid {
     margin-top: 4rem;
 }
 
+.projects h4 {
+    text-align: right;
+    font-size: 2rem;
+    color: #fdb813;
+}
+
 .projects p {
     text-align: right;
     font-size: 1.3rem;
     font-weight: 300;
     color: black;
-    padding-top: 1rem;
 }
 
 .projects a {
-    color: #fdb813;
+    color: black;
+    background-color: #fdb813;
+    border-radius: 0.5rem;
 }
 
 .projectsPicture {
