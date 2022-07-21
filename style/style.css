@@ -2,7 +2,12 @@
 
 html {
     scroll-behavior: smooth;
-}  
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
 
 * {
     font-family: 'Merriweather', sans-serif;
@@ -43,7 +48,7 @@ html {
     color: #fdb813; 
 }
 
-.intro {
+.intro, .aboutMe, .tools {
     height: auto;
     align-items: center;
 }
@@ -84,11 +89,6 @@ html {
     font-weight: 300;
     z-index: 1;
     color: black;
-}
-
-.aboutMe {
-    height: auto;
-    align-items: center;
 }
 
 .aboutMe h1 {
@@ -150,11 +150,6 @@ html {
     display: block;
     margin: auto;
     border-radius: 0.5rem;
-}
-
-.tools {
-    height: auto;
-    align-items: center;
 }
 
 .tools h1 {
@@ -289,11 +284,6 @@ html {
 
 @media (max-width: 991px){
 
-    container-fluid {
-        margin: 0;
-        padding: 0;
-    }
-
     .introPicture {
         padding-top: 5vh;
         height: 50vw;
@@ -311,15 +301,56 @@ html {
     }
     
     .revealFromRight, .revealFromLeft {
-        position: relative;
         transform: translateY(200px);
-        opacity: 0;
-        transition: 1s all ease;
     }
     
     .revealFromRight.active, .revealFromLeft.active {
         transform: translateY(0);
-        opacity: 1;
+    }
+    
+}
+
+@media (max-width: 767px){
+
+    .introPicture {
+        padding-top: 5vh;
+        height: 50vw;
+        width: auto;
+        display: flex;
+        margin: auto;
+    }
+
+    .intro h1, .intro h4, .intro p, .aboutMe h1, .aboutMe p, .projects h1, .projects h4, .projects p, .tools h1, .tools h4, .tools p, .contactMe h1, .contactMe p {
+        text-align: center;
+        
+    }
+
+    .intro h1, .aboutMe h1, .projects h1, .tools h1, .contactMe h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro h4, .projects h4, .tools h4 {
+        font-size: 1.5rem;
+    }
+
+    .contactMe h4, .sendEmail {
+        font-size: 4vw;
+    }
+
+    .toolsLogo {
+        width: 25%;
+    }
+
+    .aboutMePicContainer{
+        display: none;
+    }
+    
+    .revealFromRight, .revealFromLeft {
+        transform: translateY(0);
+    }
+    
+    .revealFromRight.active, .revealFromLeft.active {
+        transform: translateY(0);
     }
     
 }
