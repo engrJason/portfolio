@@ -292,6 +292,14 @@ html {
         margin: auto;
     }
 
+    .videoContainer {
+        display: none;
+    }
+
+    .projects {
+        background-image: none;
+    }
+
     .intro, .aboutMe, .projects, .tools, .contactMe {
         margin: 0 !important;
     }
@@ -322,6 +330,14 @@ html {
         width: auto;
         display: flex;
         margin: auto;
+    }
+
+    .videoContainer {
+        display: none;
+    }
+
+    .projects {
+        background-image: none;
     }
 
     .intro, .aboutMe, .projects, .tools, .contactMe {
