@@ -11,10 +11,6 @@ html {
     font-weight: 700;
 }
 
-container-fluid {
-    width: 100vw;
-}
-
 .navbar {
     z-index: 1;
     margin:  2rem;
@@ -22,6 +18,11 @@ container-fluid {
     background-color: transparent;
     border-bottom-style: solid;
     border-color: #fdb813;
+}
+
+.navbar-toggler-icon {
+    background-color: #fdb813;
+    border-radius: 0.5rem;
 }
 
 .nav-item, .navbar-brand {
@@ -43,7 +44,7 @@ container-fluid {
 }
 
 .intro {
-    height: 100vh;
+    height: auto;
     align-items: center;
 }
 
@@ -86,7 +87,7 @@ container-fluid {
 }
 
 .aboutMe {
-    height: 100vh;
+    height: auto;
     align-items: center;
 }
 
@@ -112,7 +113,7 @@ container-fluid {
 }
 
 .projects {
-    height: 100vh;
+    height: auto;
     align-items: center;
     background-image: url('./../media/projects.jpg');
     background-size: cover;
@@ -152,7 +153,7 @@ container-fluid {
 }
 
 .tools {
-    height: 100vh;
+    height: auto;
     align-items: center;
 }
 
@@ -184,7 +185,7 @@ container-fluid {
 }
 
 .contactMe {
-    height: 100vh;
+    height: auto;
     align-items: center;
     background-image: url('./../media/contactMe.jpg');
     background-size: cover;
@@ -284,4 +285,41 @@ container-fluid {
 .revealFromLeft.active {
     transform: translateX(0);
     opacity: 1;
+}
+
+@media (max-width: 991px){
+
+    container-fluid {
+        margin: 0;
+        padding: 0;
+    }
+
+    .introPicture {
+        padding-top: 5vh;
+        height: 50vw;
+        width: auto;
+        display: flex;
+        margin: auto;
+    }
+
+    .intro h1, .intro h4, .intro p, .aboutMe h1, .aboutMe p, .projects h1, .projects h4, .projects p, .tools h1, .tools h4, .tools p, .contactMe h1, .contactMe p {
+        text-align: center;
+    }
+
+    .contactMe h4, .sendEmail {
+        font-size: 5vw;
+    }
+    
+    .revealFromRight, .revealFromLeft {
+        position: relative;
+        transform: translateY(200px);
+        opacity: 0;
+        transition: 1s all ease;
+    }
+    
+    .revealFromRight.active, .revealFromLeft.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
 }
