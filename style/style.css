@@ -292,6 +292,10 @@ html {
         margin: auto;
     }
 
+    .intro, .aboutMe, .projects, .tools, .contactMe {
+        margin: 0 !important;
+    }
+
     .intro h1, .intro h4, .intro p, .aboutMe h1, .aboutMe p, .projects h1, .projects h4, .projects p, .tools h1, .tools h4, .tools p, .contactMe h1, .contactMe p {
         text-align: center;
     }
@@ -318,6 +322,10 @@ html {
         width: auto;
         display: flex;
         margin: auto;
+    }
+
+    .intro, .aboutMe, .projects, .tools, .contactMe {
+        margin: 0 !important;
     }
 
     .intro h1, .intro h4, .intro p, .aboutMe h1, .aboutMe p, .projects h1, .projects h4, .projects p, .tools h1, .tools h4, .tools p, .contactMe h1, .contactMe p {
