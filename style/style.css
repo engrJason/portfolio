@@ -284,6 +284,10 @@ html {
 
 @media (max-width: 991px){
 
+    .nav-item, .navbar-brand {
+        font-size: 1.5rem;
+    }
+
     .introPicture {
         padding-top: 5vh;
         height: 50vw;
@@ -323,6 +327,10 @@ html {
 }
 
 @media (max-width: 767px){
+
+    .nav-item, .navbar-brand {
+        font-size: 1rem;
+    }
 
     .introPicture {
         padding-top: 5vh;
