@@ -146,9 +146,9 @@ html {
 }
 
 .projects a {
-    color: black;
-    background-color: #fdb813;
-    border-radius: 0.5rem;
+    color: #fdb813;
+    font-weight: 900;
+    font-size: 1.5rem;
 }
 
 .projectsPicture {
