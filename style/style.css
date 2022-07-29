@@ -89,6 +89,7 @@ html {
     font-weight: 300;
     z-index: 1;
     color: black;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .aboutMe h1 {
@@ -137,6 +138,11 @@ html {
     font-size: 1.3rem;
     font-weight: 300;
     color: black;
+    
+}
+
+.projectsPicture + p {
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .projects a {
@@ -197,6 +203,7 @@ html {
     font-size: 1.3rem;
     font-weight: 300;
     color: black;
+    background-color: rgba(255, 255, 255, 0.7)
 }
 
 .contactMeEmail {
